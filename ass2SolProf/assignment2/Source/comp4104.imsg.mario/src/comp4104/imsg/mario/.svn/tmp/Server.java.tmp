@@ -1,0 +1,148 @@
+package comp4104.imsg.luigi;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.ReentrantLock;
+
+/**
+ * The messaging server.
+ */
+public class Server
+{
+	private ServerSocket	serverSocket;
+	private ExecutorService	executorService;
+	
+	private boolean			started;
+	private ReentrantLock	startLock;
+	
+	/**
+	 * Creates a new instance of <code>Server</code>
+	 */
+	public Server()
+	{
+		this.started = false;
+	}
+	
+	/**
+	 * Starts the server.
+	 */
+	public void start()
+	{
+		// acquire the start/stop lock
+		startLock.lock();
+		
+		try {
+			if (!isStarted()) {
+				// start the server
+				setStarted(true);
+				
+				// initialize the server
+				initialize();
+			}
+		}
+		finally {
+			// release the start/stop lock
+			startLock.unlock();
+		}
+		
+		// begin run-loop
+		run();
+	}
+	
+	/**
+	 * Stops the server.
+	 */
+	public void stop()
+	{
+		// acquire the start/stop lock
+		startLock.lock();
+		
+		try {
+			if (isStarted()) {
+				try {
+					// stop processing requests
+					setStarted(false);
+					serverSocket.close();
+					executorService.shutdown();
+					
+					while (!executorService.isTerminated()) {
+						try {
+							executorService.awaitTermination(0, TimeUnit.MILLISECONDS);
+						} catch (InterruptedException ie) {}
+					}
+				} catch (IOException ioe) {
+				}
+			}
+		} finally {
+			// release the start/stop lock
+			startLock.unlock();
+		}
+	}
+	
+	/**
+	 * Sets the started server flag.
+	 * @param started The value for the flag
+	 * 				  <code>true</code> if started,
+	 * 				  <code>false</code> otherwise.
+	 */
+	protected synchronized void setStarted(boolean started)
+	{
+		this.started = started;
+	}
+	
+	/**
+	 * Checks if the server is started.
+	 * 
+	 * @return <code>true</code> if the server is started,
+	 * 		   <code>false<code> otherwise.
+	 */
+	protected synchronized boolean isStarted()
+	{
+		return started;
+	}
+	
+	/**
+	 * Initializes the server.
+	 */
+	private void initialize()
+	{
+		// initialize the executor service
+		executorService = Executors.newFixedThreadPool(10);
+	}
+	
+	/**
+	 * The server run loop.
+	 */
+	private void run()
+	{
+		while (isStarted()) {
+			try {
+				Socket con = serverSocket.accept();
+				handleIncomingConnection(con);
+			} catch (IOException ioe) {
+			}
+		}
+	}
+
+	private void handleIncomingConnection(Socket con)
+	{
+	}
+	
+	// Request
+	// - Header
+	//   - command
+	//   - sender
+	//   - recipients
+	//   - lamport
+	// - Body
+	// Response
+	// - Header
+	//   - command
+	//   - sender
+	//   - status
+	//   - lamport
+}

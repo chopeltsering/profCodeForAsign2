@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/comp4104_main/!svn/ver/67/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net
+END
+IRequestResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/comp4104_main/!svn/ver/81/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net/IRequestResponse.java
+END
+IRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/comp4104_main/!svn/ver/81/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net/IRequest.java
+END
+IRequestResponseReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/comp4104_main/!svn/ver/81/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net/IRequestResponseReader.java
+END
+IResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/comp4104_main/!svn/ver/81/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net/IResponse.java
+END
+Request.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/comp4104_main/!svn/ver/81/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net/Request.java
+END
+IRequestResponseWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/comp4104_main/!svn/ver/81/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net/IRequestResponseWriter.java
+END
+Response.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/comp4104_main/!svn/ver/81/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net/Response.java
+END

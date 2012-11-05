@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/comp4104_main/!svn/ver/46/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario
+END
+AbstractAcceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/AbstractAcceptor.java
+END
+Server.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/Server.java
+END
+Dispatcher.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/Dispatcher.java
+END
+ClientManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/ClientManager.java
+END
+IAcceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/IAcceptor.java
+END
+Client.java
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/Client.java
+END

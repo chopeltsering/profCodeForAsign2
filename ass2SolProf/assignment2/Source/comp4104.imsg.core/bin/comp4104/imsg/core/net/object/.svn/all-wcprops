@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/comp4104_main/!svn/ver/34/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net/object
+END
+ObjectRequestResponseReader.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/comp4104_main/!svn/ver/81/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net/object/ObjectRequestResponseReader.java
+END
+ObjectRequestResponseWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/comp4104_main/!svn/ver/81/trunk/comp4104.imsg.core/src/comp4104/imsg/core/net/object/ObjectRequestResponseWriter.java
+END

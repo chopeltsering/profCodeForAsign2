@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/comp4104_main/!svn/ver/44/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/services
+END
+ServiceHandlerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/services/ServiceHandlerAdapter.java
+END
+AbstractServiceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/services/AbstractServiceHandler.java
+END
+MessageHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/services/MessageHandler.java
+END
+DefaultHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/services/DefaultHandler.java
+END
+LoginHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/services/LoginHandler.java
+END
+IServiceHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/comp4104_main/!svn/ver/82/trunk/comp4104.imsg.mario/src/comp4104/imsg/mario/services/IServiceHandler.java
+END
